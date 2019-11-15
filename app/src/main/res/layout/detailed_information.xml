@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layout_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="24sp"
+            app:fontFamily="@font/coming_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/layout_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_name">
+
+        <ImageView
+            android:id="@+id/image_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:minHeight="200dp"
+            app:srcCompat="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_description"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layout_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_image">
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            app:fontFamily="@font/coming_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_weight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layout_temperament"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_description">
+
+        <TextView
+            android:id="@+id/weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            app:fontFamily="@font/coming_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_temperament"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layout_origin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_weight">
+
+        <TextView
+            android:id="@+id/temperament_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            app:fontFamily="@font/coming_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_origin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/text_life_span"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_temperament">
+
+        <TextView
+            android:id="@+id/origin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            app:fontFamily="@font/coming_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_life_span"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layout_wiki_url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_origin">
+
+        <TextView
+            android:id="@+id/lifespan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            app:fontFamily="@font/coming_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_wiki_url"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layout_dog_friendliness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_life_span">
+
+        <TextView
+            android:id="@+id/wikipedia_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            app:fontFamily="@font/coming_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dog_friendliness"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/favouritebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_wiki_url">
+
+        <TextView
+            android:id="@+id/friendliness_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            app:fontFamily="@font/coming_soon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favouritebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_dog_friendliness">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="favourite"
+            android:text="ADD TO FAVOURITES" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
